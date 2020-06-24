@@ -63,8 +63,8 @@ public class StubDriver {
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(LongWritable.class);
 
-		FileInputFormat.addInputPath(job, new Path("/data/mr/wordcount/input/small.txt"));
-		FileOutputFormat.setOutputPath(job, new Path("javamrout_small"));
+		FileInputFormat.addInputPath(job, new Path("/data/mr/wordcount/input/big.txt"));
+		FileOutputFormat.setOutputPath(job, new Path("javamrout_eclipse_big"));
 
 		//To avoid hardcoding, you can take the values from command line args
 		// FileInputFormat.addInputPath(job, new Path(args[1]));
